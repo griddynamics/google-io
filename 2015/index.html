@@ -217,10 +217,19 @@ limitations under the License.
           </div>
         </core-toolbar>
         <div class="masthead-container" flex end?="{{!isPhoneSize}}" layout vertical?="{{isPhoneSize}}" horizontal?="{{isDesktopSize || isTabletSize}}">
+        <a href="http://www.google.com" target="_blank" style="position: absolute; left: -85px">
+        <img src='https://events.google.com/io2015/images/google-logo.svg'>
+        </a>
+
           <div class="io-logo large" iologodestination></div>
           <div class="{{ {transition: pageTransitioningOut} | tokenList }}" layout vertical end-justified?="{{isPhoneSize}}" flex>
             <template id="template-masthead-container" ref="" bind>
-  <h2 class="masthead-title"><i18n-msg msgid="iodate">May 28 - 29</i18n-msg>, 2015</h2>
+  <h2 class="masthead-title">
+        <a href="http://www.griddynamics.com" target="_blank">
+        <img src='img/Grid_Dynamics.svg'>
+        </a><br>
+
+<i18n-msg msgid="iodate">May 28 - 29</i18n-msg>, 2015</h2>
   <h4 class="masthead-subtitle">Kovcheg Center, Saratov</h4>
 </template>
           </div>
