@@ -15,9 +15,12 @@ limitations under the License.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Google I/O 2015 brings together developers for an immersive, two-day experience focused on exploring the next generation of technology, mobile and beyond. Join us online or in person May 28-29, 2015.">
+  <meta name="description" content="Google I/O 2015 brings together developers for an immersive, two-day experience focused on exploring the next generation of technology, mobile and beyond. Join us online or in person May 28-29, 2015. #io15">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1">
   <meta name="google-site-verification" content="AdXcVeRpEoy56o6g9c0lls3IiAATCVtB45HWJFwZmsM" />
+  <meta name="google-site-verification" content="j4g2UAPd-Fnxh2o_daravb8lvXwZuatJt5kVSbdM0Fc" />
+  
+  <meta name="google-site-verification" content="ZuttP0TBQxWoi679sPXHsxrWLCIW1kaJKEnHt2t2yU0" />
   <title>Google I/O 2015</title>
 
   
@@ -51,10 +54,10 @@ limitations under the License.
 
   
   <meta itemprop="name" content="Google I/O 2015">
-  <meta itemprop="description" content="Google I/O 2015 brings together developers for an immersive, two-day experience focused on exploring the next generation of technology, mobile and beyond. Join us online or in person May 28-29, 2015.">
+  <meta itemprop="description" content="Google I/O 2015 brings together developers for an immersive, two-day experience focused on exploring the next generation of technology, mobile and beyond. Join us online or in person May 28-29, 2015. #io15">
   <meta itemprop="image" content="https://events.google.com/io2015/images/io15-color.png">
   
-  <meta itemprop="startDate" content="2015-05-28T16:00:00Z">
+  <meta itemprop="startDate" content="2015-05-28T16:30:00Z">
   <meta itemprop="endDate" content="2015-05-29T23:59:59Z">
 
   
@@ -62,7 +65,7 @@ limitations under the License.
   <meta property="og:site_name" content="Google I/O 2015">
   <meta property="og:type" content="website">
   <meta property="og:url" content="/io2015">
-  <meta property="og:description" content="Google I/O 2015 brings together developers for an immersive, two-day experience focused on exploring the next generation of technology, mobile and beyond. Join us online or in person May 28-29, 2015.">
+  <meta property="og:description" content="Google I/O 2015 brings together developers for an immersive, two-day experience focused on exploring the next generation of technology, mobile and beyond. Join us online or in person May 28-29, 2015. #io15">
   <meta property="og:type" content="Event">
   <meta property="og:image" content="https://events.google.com/io2015/images/io15-color.png">
 
@@ -70,16 +73,16 @@ limitations under the License.
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:creator" content="@googledevs">
   <meta name="twitter:title" content="Google I/O 2015">
-  <meta name="twitter:description" content="Google I/O 2015 brings together developers for an immersive, two-day experience focused on exploring the next generation of technology, mobile and beyond. Join us online or in person May 28-29, 2015.">
+  <meta name="twitter:description" content="Google I/O 2015 brings together developers for an immersive, two-day experience focused on exploring the next generation of technology, mobile and beyond. Join us online or in person May 28-29, 2015. #io15">
   <meta name="twitter:image:src" content="https://events.google.com/io2015/images/io15-color.png">
 
   
   <script>
     window.ENV = "prod"; 
     window.PREFIX = "/io2015";
+    window.START_DATE = "2015-05-28T09:30:00-07:00";
   </script>
   <script src="https://events.google.com/io2015/scripts/analytics.js"></script>
-
   <script>
   (function() {
     "use strict";
@@ -158,7 +161,6 @@ limitations under the License.
   })();
   </script>
 
-
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
   <link rel="stylesheet" href="https://events.google.com/io2015/styles/main.css">
@@ -169,18 +171,21 @@ limitations under the License.
 
   <link rel="canonical" href="/io2015/">
 </head>
-<body id="page-home">
+<body id="page-home" style="background-color: #00BCD4;">
 
 
 <div class="io-logo-container">
-  <io-logo width="312" height="165" page="home" class="bg-medium-grey"></io-logo>
-  <div class="bg-medium-grey" iologobackground></div>
+  <io-logo width="312" height="165" page="home" class="bg-cyan"></io-logo>
+  <div class="bg-cyan" iologobackground></div>
 </div>
 
 <core-drawer-panel forceNarrow>
   <div drawer layout vertical>
     <core-toolbar class="tall bg-cyan">
       <div class="top io-logo" flex></div>
+      <div class="top">
+        <img class="profilepic" hidden>
+      </div>
       <div class="bottom">
         <div class="typo-white"><i18n-msg msgid="iodate">May 28 - 29</i18-msg>, 2015</div>
         <div>Kovcheg Center, Saratov</div>
@@ -189,13 +194,12 @@ limitations under the License.
     <div class="drawer-panel-content" flex>
     </div>
   </div>
-  <div main style="background:#00BCD4;overflow-y: auto;">
+  <div main style="overflow-y: auto;">
 
     <div id="content-container">
 
     <template is="auto-binding" id="t">
 
-      
       <core-media-query id="mq-phone" query="(min-width:320px) and (max-width:767px)"
                         queryMatches="{{isPhoneSize}}"></core-media-query>
       <core-media-query id="mq-tablet" query="(min-width:768px) and (max-width:944px)"
@@ -203,91 +207,166 @@ limitations under the License.
       <core-media-query id="mq-desktop" query="(min-width:945px)"
                         queryMatches="{{isDesktopSize}}"></core-media-query>
 
-      <header class="masthead bg-medium-grey js-experiment-instrument js-experiment-instrument--no-top-margin" layout vertical style="min-height:370px;height:370px">
+      <header class="masthead bg-cyan js-experiment-instrument js-experiment-instrument--no-top-margin" layout vertical>
         <div class="masthead__ripple">
           <div class="masthead__ripple__content" id="masthead-ripple"></div>
         </div>
         <core-toolbar id="navbar" class="{{ {'core-narrow': isPhoneSize} | tokenList }}" role="navigation">
           <paper-icon-button icon="menu" core-drawer-toggle></paper-icon-button>
           <div flex disabled?="{{selectedPage === 'home'}}">
-            <a class="io-logo-link" href="./" data-ajax-link data-track-link="nav-home" data-anim-ripple aria-label="Home" aria-hidden="{{selectedPage === 'home'}}"
-            tabindex="{{selectedPage === 'home' ? -1 : 0}}">
-              <div on-transitionend="{{manageHomeFocus}}" on-webkittransitionend="{{manageHomeFocus}}" class="io-logo"></div>
+            <a href="https://events.google.com/io2015/" target="_blank" class="io-logo-link" data-ajax-link data-track-link="nav-home"
+                         data-transition="masthead-ripple-transition" tabindex="0">
+              <div class="io-logo" iologodestination style="background-image: url(https://events.google.com/io2015/images/google-logo.svg), url(https://events.google.com/io2015/images/home/io-logo.png);background-position: center top, center bottom; height: 64px; margin-bottom: -30px"></div>
             </a>
+            <div class="masthead-meta--corner">
+              <h2 class="masthead-title">May 28 - 29, 2015</h2>
+              <h4 class="masthead-subtitle">Kovcheg Center<br>Saratov, Russia</h4>
+            </div>
           </div>
+          <span id="signin-nav-elements" class="{{isPhoneSize ? '' : pages[selectedPage].mastheadBgClass}}"
+                layout horizontal center>
+
+            <a href="http://www.griddynamics.com" target="_blank">
+              <img src='img/Grid_Dynamics.svg'>
+            </a>
+
+          </span>
         </core-toolbar>
-        <div class="masthead-container" flex end?="{{!isPhoneSize}}" layout vertical?="{{isPhoneSize}}" horizontal?="{{isDesktopSize || isTabletSize}}">
-        <a href="http://www.google.com" target="_blank" style="position: absolute; left: -85px">
-        <img src='https://events.google.com/io2015/images/google-logo.svg'>
-        </a>
 
-          <div class="io-logo large" iologodestination></div>
-          <div class="{{ {transition: pageTransitioningOut} | tokenList }}" layout vertical end-justified?="{{isPhoneSize}}" flex>
+        
+        <div class="masthead-container" flex end?="{{!isPhoneSize}}"
+             layout vertical?="{{isPhoneSize}}" horizontal?="{{isDesktopSize || isTabletSize}}">
+          <div class="masthead-meta {{ {transition: pageTransitioningOut} | tokenList }}"
+               layout vertical end-justified?="{{isPhoneSize}}" flex style="opacity: 1;">
             <template id="template-masthead-container" ref="" bind>
-  <h2 class="masthead-title">
-        <a href="http://www.griddynamics.com" target="_blank">
-        <img src='img/Grid_Dynamics.svg'>
-        </a><br>
-
-<i18n-msg msgid="iodate">May 28 - 29</i18n-msg>, 2015</h2>
-  <h4 class="masthead-subtitle">Kovcheg Center, Saratov</h4>
 </template>
           </div>
         </div>
-        <experiment-fab-container style="display:none" mini?="{{isPhoneSize}}" mode="{{mode}}" playmode="{{playmode}}" recordmode="{{recordmode}}" direction="{{direction}}"></experiment-fab-container>
+        <experiment-fab-container style="display:none" class="fab" mini?="{{isPhoneSize}}" mode="{{mode}}" playmode="{{playmode}}" recordmode="{{recordmode}}" direction="{{direction}}" hidden?="{{selectedPage !== 'home'}}"></experiment-fab-container>
+        <a href="schedule#myschedule" data-ajax-link data-track-link="fab-myschedule"
+           hidden>
+          <paper-fab class="fab" icon="event" title="My Schedule" mini?="{{isPhoneSize}}"></paper-fab>
+        </a>
       </header>
-
-      <main class="io-main {{ {transitionIn: pageTransitioningIn, transitionOut: pageTransitioningOut} | tokenList }}" >
-        <template id="template-content-container" ref="" bind>
-  <core-toolbar class="navbar__overlay navbar__overlay--video" aria-hidden="{{!fullscreenVideoActive}}" fit>
-    <paper-icon-button icon="arrow-back" on-tap="{{closeVideoCard}}" aria-label="Close video"></paper-icon-button>
-    <span flex><i18n-msg msgid="watch-recap-video">Watch the 2014 I/O Recap Video</i18n-msg></span>
-  </core-toolbar>
-
-
-
-  <div>
-
-    <section id="registration" class="page__section js-experiment-instrument js-experiment-instrument--no-top-margin bg-cyan">
-      <h2 tabindex="0">I/O begins May 28 at 19:00 MSK</h2>
 
       
 
-      <div class="io-countdown" layout vertical center style="margin-bottom: 50px;">
-        <countdown-timer bgcolor="#00BCD4"
-                         date="May 28 2015 09:00:00 GMT-0700 (PDT)"
-                         dateadjustment="5" easeintime="490" waittime="200"
-                         easeouttime="390" autoStart="yes"
-                         thresholdInformation="{{thresholdInfo}}"
-                         on-timerthreshold="{{onCountdownTimerThreshold}}"
-                         value="{{countdownValue}}">
-        </countdown-timer>
+      <main class="io-main {{ {transitionIn: pageTransitioningIn, transitionOut: pageTransitioningOut} | tokenList }}">
+        <template id="template-content-container" ref="" bind>
+<div id="countdown-container" class="photo__masthead--fullbleed" fit>
+  <countdown-timer bgcolor="#00BCD4"
+      date="2015-05-28T09:30:00-07:00"
+      easeintime="490" waittime="100"
+      easeouttime="400"
+      value="{{countdownValue}}" autoStart
+      aria-label="{{countdownValue.days}} days, {{countdownValue.hours}} hours, {{countdownValue.minutes}} minutes, {{countdownValue.seconds}} seconds, until Google I/O"
+      role="timer">
+  </countdown-timer>
+</div>
 
-        <template if="{{thresholdInfo.thresholdDays}}">
-          <h4 class="countdown-label"><a href="https://events.google.com/io2015/schedule" target="_blank" data-ajax-link>Day<span hidden?="{{countdownValue === 1}}">s</span> until I/O begins</a></h4>
-        </template>
+  <script>
+  (function() {
 
-        <template if="{{thresholdInfo.thresholdHours}}">
-          <h4 class="countdown-label"><a href="https://events.google.com/io2015/schedule" target="_blank" data-ajax-link>Hour<span hidden?="{{countdownValue === 1}}">s</span> until I/O begins</a></h4>
-        </template>
+    
+    function initPage() {
+      var page = IOWA.Elements.Template.pages['home'];
+      var socialPostsEndpoint = 'https://events.google.com/io2015/api/v1/social';
+      var socialPostUpdateInterval = 30000; 
+      var updateSocialPostsTimeout;
 
-        <template if="{{thresholdInfo.thresholdMinutes}}">
-          <h4 class="countdown-label"><a href="https://events.google.com/io2015/schedule" target="_blank" data-ajax-link>Minute<span hidden?="{{countdownValue === 1}}">s</span> until I/O begins</a></h4>
-        </template>
+      if (page.hasBeenLoaded) {
+        return;
+      }
 
-        <template if="{{thresholdInfo.thresholdSeconds}}">
-          <h4 class="countdown-label"><a href="https://events.google.com/io2015/schedule" target="_blank" data-ajax-link>Second<span hidden?="{{countdownValue === 1}}">s</span> until I/O begins</a></h4>
-        </template>
+      function updateSocialPosts() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', socialPostsEndpoint);
+        
+        
+        
+        xhr.setRequestHeader('X-Cache-Only', 'false');
 
-      </div>
+        xhr.onload = function() {
+          if (this.status < 400) {
+            processSocialPosts(JSON.parse(this.response));
+            
+            updateSocialPostsTimeout = window.setTimeout(updateSocialPosts,
+              socialPostUpdateInterval);
+          }
+        };
 
-    </section>
+        xhr.send();
+      }
 
+      function processSocialPosts(socialPosts) {
+        
+        IOWA.Elements.Template.socialPosts = socialPosts.slice(0, 3);
+      }
 
+      page.load = function() {
+        IOWA.Request.cacheThenNetwork(socialPostsEndpoint, processSocialPosts, processSocialPosts);
+        
+        updateSocialPostsTimeout = window.setTimeout(updateSocialPosts, socialPostUpdateInterval);
 
-  </div>
+        
+        IOWA.Elements.Template.homeGlobeVisible = false;
+        IOWA.Elements.Template.selectedCity = null;
+        IOWA.Elements.Template.fullscreenVideoActive = false;
+        IOWA.Elements.Template.webglSupported = true;
+      };
 
+      page.unload = function() {
+        if (updateSocialPostsTimeout) {
+          window.clearTimeout(updateSocialPostsTimeout);
+          updateSocialPostsTimeout = null;
+        }
+      };
 
+      IOWA.Elements.Template.onGlobeLocationUpdate = function(e, detail, sender) {
+        e.stopPropagation();
+        if (detail.isSelected) {
+          IOWA.Elements.Main.querySelector('.globe-marker').classList.add('up');
+        }
+      };
+
+      IOWA.Elements.Template.onArrivedAtGlobePin = function(e, detail, sender) {
+        e.stopPropagation();
+        IOWA.Elements.Main.querySelector('.globe-marker').classList.remove('up');
+      };
+
+      IOWA.Elements.Template.onSetReminder = function(e, detail, sender) {
+        e.preventDefault();
+
+        var template = this;
+        template.settingsIOReminder = true;
+
+        IOWA.Schedule.saveSession('__keynote__', true).then(function() {
+          template.settingsIOReminder = false;
+
+          if (template.savedSessions.length) {
+            IOWA.Schedule.updateSavedSessionsUI(IOWA.Elements.Template.savedSessions);
+          }
+
+          IOWA.Schedule.bookmarkSessionNotification(
+              true, "You'll be reminded when I/O starts.")
+        });
+      };
+
+      page.load(); 
+      page.hasBeenLoaded = true;
+    }
+
+    
+    if (document.readyState !== 'loading') {
+      initPage();
+    }
+
+    
+    
+    window._initPage = initPage;
+
+  })();
+  </script>
 </template>
       </main>
 
@@ -298,7 +377,6 @@ limitations under the License.
   </div>
 </core-drawer-panel>
 
-<io-toast id="toast" duration="9000"></io-toast>
 
 <script src="https://events.google.com/io2015/scripts/site-scripts.js"></script>
 <script>
@@ -324,4 +402,3 @@ limitations under the License.
 
 </body>
 </html>
-
