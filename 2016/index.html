@@ -325,10 +325,13 @@ function _onIntro(e) {
 
 
   function init() {
+if (typeof(IOWA.Elements.Template) != "undefined"){
 IOWA.Elements.Template.fire("visibilitychange");
+}
 
   }
 
+    window.addEventListener('WebComponentsReady', init);
     window.addEventListener('load', init);
     window.addEventListener('countdown-intro', _onIntro);
 
