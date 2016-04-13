@@ -1,0 +1,341 @@
+<!--
+Copyright 2016 Google Inc. All rights reserved.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+  http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<!doctype html>
+<html lang="en" itemscope itemtype="http://schema.org/Event">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Google I/O 2016 brings together developers for an immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond. Join us online or in person May 18-20, 2016. #io16">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1">
+  <meta name="google-site-verification" content="AdXcVeRpEoy56o6g9c0lls3IiAATCVtB45HWJFwZmsM" />
+  <meta name="google-site-verification" content="j4g2UAPd-Fnxh2o_daravb8lvXwZuatJt5kVSbdM0Fc" />
+  <meta name="google-site-verification" content="ZuttP0TBQxWoi679sPXHsxrWLCIW1kaJKEnHt2t2yU0" />
+  <title>Google I/O 2016</title>
+
+  
+  <link rel="manifest" href="manifest.json">
+  
+  <meta name="theme-color" content="#546E7A">
+
+  
+  <meta name="mobile-web-app-capable" content="yes"> 
+  <meta name="application-name" content="Google I/O 2016"> 
+
+  <link rel="icon" sizes="32x32" href="https://events.google.com/io2016/images/favicon/favicon-32.png">
+
+  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Google I/O 2016">
+
+  
+  <link rel="shortcut icon" href="https://events.google.com/io2016/images/favicon/favicon-72.png">
+  <link rel="apple-touch-icon" href="https://events.google.com/io2016/images/touch/homescreen48.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://events.google.com/io2016/images/touch/homescreen72.png">
+  <link rel="apple-touch-icon" sizes="96x96" href="https://events.google.com/io2016/images/touch/homescreen96.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://events.google.com/io2016/images/touch/homescreen144.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="https://events.google.com/io2016/images/touch/homescreen192.png">
+
+  
+  <meta name="msapplication-TileImage" content="https://events.google.com/io2016/images/touch/homescreen144.png">
+  <meta name="msapplication-TileColor" content="#546E7A">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  
+  <meta itemprop="name" content="Google I/O 2016">
+  <meta itemprop="description" content="Google I/O 2016 brings together developers for an immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond. Join us online or in person May 18-20, 2016. #io16">
+  <meta itemprop="image" content="https://events.google.com/io2016/images/io16-social.jpg">
+  
+  <meta itemprop="startDate" content="2016-05-18T16:30:00Z">
+  <meta itemprop="endDate" content="2016-05-20T23:59:59Z">
+
+  
+  <meta property="og:title" content="Google I/O 2016">
+  <meta property="og:site_name" content="Google I/O 2016">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://events.google.com/io2016">
+  <meta property="og:description" content="Google I/O 2016 brings together developers for an immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond. Join us online or in person May 18-20, 2016. #io16">
+  <meta property="og:type" content="Event">
+  <meta property="og:image" content="https://events.google.com/io2016/images/io16-social.jpg">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@googledevs">
+  <meta name="twitter:title" content="Google I/O 2016">
+  <meta name="twitter:description" content="Google I/O 2016 brings together developers for an immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond. Join us online or in person May 18-20, 2016. #io16">
+  <meta name="twitter:image:src" content="https://events.google.com/io2016/images/io16-social.jpg">
+
+  
+  <script>
+    window.ENV = "prod"; 
+    window.PREFIX = "/io2016";
+    window.START_DATE = "2016-05-18T09:30:00-07:00";
+  </script>
+  <script src="https://events.google.com/io2016/scripts/analytics.js"></script>
+  <script>
+  (function() {
+    "use strict";
+
+    
+    window.onerror = function(message, file, lineNumber, columnNumber, error) {
+      
+      try {
+        
+        if (error !== undefined) {
+          message = error.stack;
+        }
+
+        IOWA.Analytics.trackError(file + ':' + lineNumber, message);
+      } catch (e) {
+        
+      }
+    };
+
+    
+
+    function getUrlParameter(param) {
+      if (!window.location.search) {
+        return;
+      }
+      var m = new RegExp(param + '=([^&]*)').exec(window.location.search.substring(1));
+      if (!m) {
+        return;
+      }
+      return decodeURIComponent(m[1]);
+    }
+
+    
+    
+    var ignoreCheck = getUrlParameter('ignore_browser_check') == 'true';
+
+    
+    
+    
+    
+    var supported = ignoreCheck || (function whatBrowserYouBe() {
+      var uaString = navigator.userAgent;
+
+      
+      var msie = /MSIE +([\d\.]+)/.exec(uaString);
+      if (msie && msie[1]) {
+        if (msie[1] === '7.0') {
+          var tridentVersion = /Trident\/(\d.\d)/.exec(uaString);
+          if (tridentVersion && tridentVersion[1]) {
+            return parseInt(tridentVersion[1], 10) >= 6;
+          } else {
+            return false;
+          }
+        } else {
+          return parseInt(msie[1], 10) >= 10;
+        }
+      }
+      
+      if (uaString.indexOf('Chrome') === -1 && uaString.indexOf('Android') !== -1) {
+        return !/^Google/.test(navigator.vendor);
+      }
+      
+      if (uaString.indexOf('Opera') !== -1) {
+        return false;
+      }
+      
+      return true;
+    })();
+
+    if (!supported) {
+      
+      IOWA.Analytics.trackEvent('Polymer', 'unsupported-browser', navigator.userAgent, null, function() {
+        window.location = "/io2016/upgrade";
+      });
+    }
+  })();
+  </script>
+
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" href="https://events.google.com/io2016/styles/main.css">
+
+  <link rel="import" href="https://events.google.com/io2016/elements/elements.html">
+  
+  <link rel="canonical" href="https://events.google.com/io2016/">
+  
+
+  <style is="custom-style" include="shared-app-styles">
+
+    .masthead {
+      --app-header-shadow: {
+        box-shadow: inset 0px 5px 2px -3px rgba(0, 0, 0, 0.2);
+      };
+      --app-header-background-rear-layer: {
+        background-color: var(--paper-grey-50);
+      };
+    }
+
+    paper-dropdown-menu.white {
+      --paper-input-container-color: inherit;
+      --paper-dropdown-menu-icon: {
+        color: inherit;
+      };
+      --paper-input-container: {
+        padding: 0;
+      };
+    }
+
+    #navbar paper-tabs {
+      --paper-tabs-selection-bar-color: var(--paper-blue-grey-100);
+    }
+    #navbar.scrolled paper-tabs {
+      --paper-tabs-selection-bar-color: var(--paper-blue-grey-600);
+    }
+
+  </style>
+</head>
+<body id="page-home" class="bg-white">
+
+<template is="dom-bind" id="t">
+
+<google-signin client-id="237695054204-vib0c833at22rkb2ig03791junv6ltrc.apps.googleusercontent.com" scopes="profile email"
+               user="{{currentUser}}"></google-signin>
+
+
+<iron-media-query id="mq-phone" full query="(max-width:768px)"
+                  query-matches="{{app.isPhoneSize}}"></iron-media-query>
+<iron-media-query id="mq-tablet" full query="(min-width:769px) and (max-width:959px)"
+                  query-matches="{{app.isTabletSize}}"></iron-media-query>
+<iron-media-query id="mq-desktop" query="(min-width:960px)"
+                  query-matches="{{app.isDesktopSize}}"></iron-media-query>
+
+<app-drawer id="appdrawer" swipe-open="[[app.isPhoneSize]]">
+  <div layout vertical class="drawer-container shadow-z5">
+    <paper-toolbar class="tall">
+      <div class="top io-logo" flex></div>
+      <div class="top">
+        <img class="profilepic" hidden>
+      </div>
+      <div class="bottom">
+        <div>May 18 &#8211; 20, 2016</div>
+        <div>Kovcheg Center<br>Saratov, Russia</div>
+      </div>
+    </paper-toolbar>
+    <iron-selector class="drawer-menu" selected="{{selectedPage}}" attr-for-selected="label"
+                   on-iron-activate="closeDrawer" activate-event="click" flex>
+    </iron-selector>
+  </div>
+</app-drawer>
+
+  <app-header reveals effects="fade-background waterfall" id="header" class="masthead">
+    <app-toolbar id="navbar" role="navigation">
+      <paper-icon-button icon="io:menu"
+                         on-tap="toggleDrawer"
+                         hidden$="[[!app.isPhoneSize]]"></paper-icon-button>
+      <div flex>
+        <a href="https://events.google.com/io2016/" target="_blank" class="io-logo-link"
+            layout center aria-label="Home">
+          <div class="io-logo" style="background-image: url(https://events.google.com/io2016/images/google-logo.svg), url(https://events.google.com/io2016/images/io.png);background-position: center top, center bottom; height: 64px; margin-bottom: -30px"></div>
+        </a>
+            <div style="position: absolute;top: 16px;left: 100px;" hidden$="[[app.isPhoneSize]]">
+              <h2 class="masthead-title">May 28 - 29, 2015</h2>
+              <h4 class="masthead-subtitle">Kovcheg Center<br>Saratov, Russia</h4>
+            </div>
+
+      </div>
+      <paper-tabs attr-for-selected="label"
+                  selected="{{selectedPage}}" activate-event="" tabindex="-1">
+       
+        <paper-tab label="attend" tabindex="-1" role="">
+        </paper-tab>
+        <paper-tab label="extended" tabindex="-1" role="">
+        </paper-tab>
+      </paper-tabs>
+      <span id="signin-nav-elements" layout horizontal center>
+            <a href="http://www.griddynamics.com" target="_blank">
+              <img src='img/Grid_Dynamics.svg'>
+            </a>
+      </span>
+    </app-toolbar>
+  </app-header>
+
+  <div id="mainScrollingRegion" fit>
+  <main class$="io-main {{_addClass('transitionIn', pageTransitioningIn)}} {{_addClass('transitionOut', pageTransitioningOut)}}">
+
+    
+    <lazy-pages>
+  <style include="shared-app-styles">
+    :host {
+      display: block;
+    }
+  </style>
+
+  <div layout="" horizontal="" end="">
+    <div id="countdown-container" class="card__container">
+      <countdown-timer id="ctimer" date="2016-05-18T09:30:00-07:00" role="timer" current-time="{{currentTime}}"></countdown-timer>
+    </div>
+  </div>
+
+  <div id="aria-countdown" role="timer" aria-label$="[[currentTime]]">[[currentTime]]</div>
+    </lazy-pages>
+
+  </main>
+
+  <div id="fab" class="fixed" hidden$="[[app.isPhoneSize]]" layout end-justified>
+    
+    <a id="fabAnchor" href="#" on-click="backToTop"
+       data-track-link="link-backtotop" tabindex="-1"
+       aria-hidden="true" aria-label="back to top">
+      <paper-fab icon="io:expand-less" id="tst" noink mini="[[app.isPhoneSize]]" tabindex="-1"></paper-fab>
+    </a>
+  </div>
+  <footer class="bg-bluegrey-50-40" layout horizontal center style="display:none">
+
+    <div flex>
+
+    </div>
+  </footer>
+
+</div>
+
+</template>
+
+
+
+<script src="https://events.google.com/io2016/scripts/site-libs.js"></script>
+<script src="https://events.google.com/io2016/scripts/site-scripts.js"></script>
+<script>
+
+(function() {
+
+function _onIntro(e) {
+      e.stopPropagation();
+      var logo = IOWA.Elements.Nav.querySelector('.io-logo');
+      if (e.detail.start) {
+        logo.classList.remove('active');
+      } else if (e.detail.done) {
+        logo.classList.add('active');
+      }
+    }
+
+
+  function init() {
+IOWA.Elements.Template.fire("visibilitychange");
+
+  }
+
+    window.addEventListener('load', init);
+    window.addEventListener('countdown-intro', _onIntro);
+
+})();
+
+
+
+</script>
+</body>
+</html>
