@@ -74,19 +74,28 @@ limitations under the License.
   <meta name="twitter:title" content="Google I/O 2016">
   <meta name="twitter:description" content="Google I/O 2016 brings together developers for an immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond. Join us online or in person May 18-20, 2016. #io16">
   <meta name="twitter:image:src" content="https://events.google.com/io2016/images/io16-social.jpg">
-
+  <script async src="https://www.google-analytics.com/analytics.js"></script>
   
-  <script>
-    window.ENV = "prod"; 
-    window.PREFIX = "/io2016";
-    window.START_DATE = "2016-05-18T09:30:00-07:00";
-  </script>
-  <script src="https://events.google.com/io2016/scripts/analytics.js"></script>
   <script>
   (function() {
     "use strict";
+    window.ENV = "prod";
+    window.PREFIX = "/io2016";
+    window.START_DATE = "2016-05-18T10:00:00-07:00";
 
-    
+    window.FIREBASE_SHARDS = ["https://io-2016-prod-1.firebaseio.com/","https://io-2016-prod-2.firebaseio.com/","https://io-2016-prod-3.firebaseio.com/","https://io-2016-prod-4.firebaseio.com/","https://io-2016-prod-5.firebaseio.com/","https://io-2016-prod-6.firebaseio.com/","https://io-2016-prod-7.firebaseio.com/","https://io-2016-prod-8.firebaseio.com/","https://io-2016-prod-9.firebaseio.com/","https://io-2016-prod-10.firebaseio.com/"];
+
+    window.Polymer = window.Polymer || {lazyRegister: true};
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+
+    ga('create', {
+      trackingId: window.ENV === 'prod' ? 'UA-58124138-3' : 'UA-58124138-2',
+      cookieDomain: 'auto',
+      cookiePath: window.ENV !== 'dev' ? window.PREFIX || '/io2016' : null,
+      siteSpeedSampleRate: 10,
+    });
+
+
     window.onerror = function(message, file, lineNumber, columnNumber, error) {
       
       try {
@@ -154,7 +163,7 @@ limitations under the License.
     if (!supported) {
       
       IOWA.Analytics.trackEvent('Polymer', 'unsupported-browser', navigator.userAgent, null, function() {
-        window.location = "/io2016/upgrade";
+        window.location = "https://events.google.com/io2016/upgrade";
       });
     }
   })();
@@ -164,11 +173,9 @@ limitations under the License.
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
   <link rel="stylesheet" href="https://events.google.com/io2016/styles/main.css">
 
-  <link rel="import" href="https://events.google.com/io2016/elements/elements.html">
+  <link rel="import" href="elements/critical.html">
   
   <link rel="canonical" href="https://events.google.com/io2016/">
-  
-
   <style is="custom-style" include="shared-app-styles">
 
     .masthead {
@@ -199,7 +206,9 @@ limitations under the License.
 
   </style>
 </head>
-<body id="page-home" class="bg-white">
+<body id="page-home" class="loading bg-white">
+
+<div id="splash" class="bg-bluegrey-600"></div>
 
 <template is="dom-bind" id="t">
 
@@ -222,7 +231,7 @@ limitations under the License.
         <img class="profilepic" hidden>
       </div>
       <div class="bottom">
-        <div>May 18 &#8211; 19, 2016</div>
+        <div>May 18 &#8211; 20, 2016</div>
         <div>Kovcheg Center<br>Saratov, Russia</div>
       </div>
     </paper-toolbar>
@@ -243,7 +252,7 @@ limitations under the License.
           <div class="io-logo" style="background-image: url(https://events.google.com/io2016/images/google-logo.svg), url(https://events.google.com/io2016/images/io.png);background-position: center top, center bottom; height: 64px; margin-bottom: -30px"></div>
         </a>
             <div style="position: absolute;top: 16px;left: 103px;" hidden$="[[app.isPhoneSize]]">
-              <h2 class="masthead-title">May 18 - 19, 2015</h2>
+              <h2 class="masthead-title">May 18 - 20, 2016</h2>
               <h4 class="masthead-subtitle">Kovcheg Center<br>Saratov, Russia</h4>
             </div>
 
@@ -308,7 +317,7 @@ limitations under the License.
 
 
 <script src="https://events.google.com/io2016/scripts/site-libs.js"></script>
-<script src="https://events.google.com/io2016/scripts/site-scripts.js"></script>
+<script src="scripts/site-scripts.js"></script>
 <script>
 
 (function() {
